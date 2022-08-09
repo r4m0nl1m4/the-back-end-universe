@@ -1,0 +1,31 @@
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/tasks
+
+### 
+
+POST http://localhost:8080/tasks
+Content-type: application/json
+
+{
+    "name": "Add"
+}
+
+###
+
+GET http://localhost:8080/tasks/3a39a1cb-9304-4a0d-8602-68de1544eccc
+
+###
+
+PUT http://localhost:8080/tasks?id=3a39a1cb-9304-4a0d-8602-68de1544eccc
+Content-type: application/json
+
+{
+    "name": "Remove"
+}
+
+###
+
+DELETE http://localhost:8080/tasks?id=3a39a1cb-9304-4a0d-8602-68de1544eccc
